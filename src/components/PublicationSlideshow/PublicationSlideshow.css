@@ -1,0 +1,79 @@
+/* src/components/PublicationSlideshow/PublicationSlideshow.css */
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 80vh; /* Adjust the height as needed */
+}
+
+.slide-image {
+    object-fit: contain; /* Ensures the image covers the container without stretching */
+    width: 100%;
+    height: auto;
+}
+
+.publication-details {
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.publication-details h3, .publication-details .buttons {
+    color: white;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px; /* Ensure buttons are below the title */
+}
+
+.buttons a,
+.buttons button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.buttons a:hover,
+.buttons button:hover {
+    background-color: darkred;
+}

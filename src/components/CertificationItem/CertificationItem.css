@@ -1,0 +1,47 @@
+/* src/components/CertificationItem/CertificationItem.css */
+.certification-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #333; /* Dark border for better contrast */
+    border-radius: 10px;
+    background-color: #000; /* Black background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #fff; /* White text */
+  }
+  
+  .certification-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .certification-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .certification-details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .certification-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #fff; /* White text */
+  }
+  
+  .certification-description {
+    font-size: 1em;
+    color: #ddd; /* Light gray text for description */
+  }
+  
+  .certification-date {
+    font-size: 0.9em;
+    color: #bbb; /* Lighter gray text for date */
+  }
+  

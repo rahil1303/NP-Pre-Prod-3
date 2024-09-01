@@ -1,0 +1,56 @@
+/* src/components/Achievements/Achievements.css */
+
+.achievements-list {
+    padding: 20px;
+}
+
+.achievement-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.achievement-item {
+    width: 100%; /* Adjust width as needed */
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.achievement-item:hover {
+    transform: scale(1.05);
+}
+
+.achievement-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.achievement-details {
+    padding: 10px 0;
+}
+
+.achievement-details h3 {
+    margin: 0;
+    font-size: 1.2em; /* Smaller font size */
+}
+
+.achievement-details p {
+    margin: 10px 0;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+.details-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details-list li {
+    margin: 5px 0;
+}

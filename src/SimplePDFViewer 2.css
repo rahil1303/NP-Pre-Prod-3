@@ -1,0 +1,39 @@
+.pdf-viewer-container {
+    height: 750px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack resume and button vertically */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.resume-container {
+    width: 90%; /* Adjust width as needed */
+    height: calc(100% - 60px); /* Leave space for the button */
+    background-color: #000; /* Background color for the resume area */
+    overflow: hidden; /* Ensure the PDF is contained */
+    margin-bottom: 20px; /* Space between resume and download button */
+}
+
+.download-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.download-button {
+    color: #fff;
+    background-color: #e50914;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #b0070f;
+}

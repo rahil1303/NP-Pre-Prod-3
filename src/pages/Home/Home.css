@@ -1,0 +1,86 @@
+.home {
+    text-align: center;
+    color: #fff;
+}
+
+.intro-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+}
+
+.scroll-down {
+    margin-top: 20px;
+}
+
+.home-about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 20px;
+    height: 100vh; /* Ensure it takes up the full viewport height */
+    width: 100%; /* Ensure it takes up the full viewport width */
+    scroll-snap-align: start; /* Ensure smooth scrolling to the section */
+}
+
+.home-about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.home-about-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 45%; /* Adjust width to ensure proper fit */
+}
+
+.home-about-images img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.home-about-description {
+    max-width: 50%;
+    height: 100%;
+    text-align: justify;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.home-about-description h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.home-about-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.home-about-description li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px; /* Adjust padding to align with the arrows */
+}
+
+.home-about-description li::before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #e50914; /* Change this color to match your theme */
+    font-size: 1.5rem;
+    transform: translateY(-20%); /* Adjust the vertical alignment of the arrows */
+}

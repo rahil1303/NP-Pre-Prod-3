@@ -1,0 +1,13 @@
+/* src/pages/Certifications/CertificationsPage.css */
+
+.certifications-page {
+    background: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.certifications-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}

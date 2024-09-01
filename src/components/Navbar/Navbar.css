@@ -1,0 +1,103 @@
+/* Navbar.css */
+.navbar {
+    width: 100%;
+    padding: 10px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    color: #ffffff; /* White text color */
+    background-color: #141414; /* Netflix dark background color */
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.navbar-left ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-left ul li {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff; /* White text color */
+}
+
+.navbar-left ul li:hover {
+    color: #e50914; /* Netflix red on hover */
+}
+
+.navbar-left ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right .icons {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.navbar-right .icons:hover {
+    opacity: 0.8;
+}
+
+.navbar-right p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.navbar-profile .profile {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.navbar-profile .caret {
+    width: 12px;
+    height: 12px;
+}
+
+.navbar-profile .dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: #141414;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.navbar-profile:hover .dropdown {
+    display: block;
+}

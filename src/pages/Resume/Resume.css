@@ -1,0 +1,38 @@
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 75%; /* Reduced height for better viewing */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional shadow for better viewing */
+}
+
+.resume-download {
+    margin-top: 10px;
+}
+
+.resume-download a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-download a:hover {
+    background-color: #fff;
+    color: #000;
+}
