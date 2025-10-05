@@ -3,7 +3,7 @@ import React from 'react';
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import resumePdf from '../assets/Resume.pdf';
+import resumePdf from '../assets/Resume_3.pdf';
 
 const PDFViewer = () => {
     return (
