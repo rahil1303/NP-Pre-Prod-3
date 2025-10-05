@@ -10,7 +10,7 @@ const Resume = () => {
   return (
     <div className="resume-container">
       <div className="resume-content">
-        <Viewer fileUrl="/Resume_3.pdf" plugins={[defaultLayoutPluginInstance]} />
+        <Viewer fileUrl={`/Resume_3.pdf?cacheBust=${Date.now()}`} plugins={[defaultLayoutPluginInstance]} />
       </div>
       <div className="resume-download">
         <a href="/Resume_3.pdf" download>
