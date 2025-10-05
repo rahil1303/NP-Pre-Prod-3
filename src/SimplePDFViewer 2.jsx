@@ -13,7 +13,7 @@ const SimplePDFViewer = () => {
         <div className="pdf-viewer-container">
             <div className="resume-container">
                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`}>
-                    <Viewer fileUrl="/RAHIL_SHARMA_RESUME_SEPTEMBER_2024.pdf" />
+                    <Viewer fileUrl="/Resume_3.pdf" />
                 </Worker>
             </div>
             <div className="download-container">
