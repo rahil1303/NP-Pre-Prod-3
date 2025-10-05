@@ -17,7 +17,7 @@ const SimplePDFViewer = () => {
                 </Worker>
             </div>
             <div className="download-container">
-                <a href="/RAHIL_SHARMA_RESUME_SEPTEMBER_2024.pdf" download className="download-button">
+                <a href="/Resume_3.pdf" download className="download-button">
                     Download Resume
                 </a>
             </div>
