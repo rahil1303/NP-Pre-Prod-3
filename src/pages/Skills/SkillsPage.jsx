@@ -1,44 +1,85 @@
 // src/pages/Skills/SkillsPage.jsx
 import React from 'react';
-import { FaCode, FaDatabase, FaCloud, FaToolbox, FaProjectDiagram, FaTasks, FaBook } from 'react-icons/fa';
+import { 
+    FaCode, 
+    FaDatabase, 
+    FaCloud, 
+    FaToolbox, 
+    FaProjectDiagram, 
+    FaTasks, 
+    FaBook, 
+    FaLock 
+} from 'react-icons/fa';
 import SkillCategory from '../../components/SkillCategory/SkillCategory';
 import './SkillsPage.css';
 
 const skills = [
     {
-        category: 'Programming',
+        category: 'Programming & Scripting',
         icon: <FaCode />,
-        skills: ['JavaScript', 'NodeJS', 'Java', 'Python', 'MATLAB', 'SQL', 'R programming'],
+        skills: [
+            'Python', 'Java', 'JavaScript', 'Node.js', 'SQL', 
+            'MATLAB', 'R', 'Bash / Shell Scripting'
+        ],
     },
     {
-        category: 'Data Science',
+        category: 'Data Science & Analytics',
         icon: <FaDatabase />,
-        skills: ['Pandas', 'Confluent Kafka', 'NumPy', 'Matplotlib', 'BeautifulSoup', 'Seaborn'],
+        skills: [
+            'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'BeautifulSoup',
+            'Scikit-Learn', 'XGBoost', 'LightGBM', 'Plotly'
+        ],
     },
     {
-        category: 'Machine Learning Libraries',
+        category: 'Machine Learning & AI',
         icon: <FaProjectDiagram />,
-        skills: ['SciPy', 'PyTorch', 'Theano', 'Keras', 'Scikit-Learn', 'TensorFlow', 'NLTK', 'OpenCV'],
+        skills: [
+            'TensorFlow', 'PyTorch', 'Keras', 'Transformers (Hugging Face)',
+            'LSTM / CNN', 'Explainable AI (XAI)', 'NLTK', 'OpenCV'
+        ],
     },
     {
-        category: 'Cloud Technologies',
+        category: 'Cloud & Big Data Technologies',
         icon: <FaCloud />,
-        skills: ['Snowflake', 'Microsoft Azure', 'AWS Lambda', 'Databricks', 'IBM Watson Cloud', 'Kafka', 'Google Cloud'],
+        skills: [
+            'Snowflake', 'Databricks', 'Google Cloud Platform (GCP)', 
+            'Microsoft Azure', 'AWS', 'Confluent Kafka', 
+            'Docker', 'GitHub Actions'
+        ],
     },
     {
-        category: 'Frameworks and APIs',
+        category: 'Frameworks & APIs',
         icon: <FaToolbox />,
-        skills: ['Material UI', 'Django', 'Bootstrap', 'Stitch', 'Docker', 'Avro Schema Registry'],
+        skills: [
+            'Django', 'Flask', 'Streamlit', 'Material UI', 'Bootstrap', 
+            'Avro Schema Registry', 'Docker Compose'
+        ],
     },
     {
-        category: 'Other Skills',
+        category: 'Security & Research Tools',
+        icon: <FaLock />,
+        skills: [
+            'gRPC / Protocol Buffers', 'Cryptographic Protocols', 
+            'Oblivious Sort / Bloom Filter Design', 
+            'Experimental Design (RCBD)', 'Energy Profiling'
+        ],
+    },
+    {
+        category: 'Professional & Teaching Skills',
         icon: <FaTasks />,
-        skills: ['Git', 'GitHub', 'GitLab', 'BitBucket', 'Waterfall', 'Agile', 'Communication', 'Organization Management', 'Research & Exploration', 'Information Management'],
+        skills: [
+            'Teaching Assistance', 'Research Communication', 
+            'Version Control (Git, GitHub, GitLab)', 
+            'Agile Workflow', 'Technical Writing', 'Organization Management'
+        ],
     },
     {
-        category: 'Relevant Knowledge',
+        category: 'Theoretical & Mathematical Foundations',
         icon: <FaBook />,
-        skills: ['Statistics', 'Calculus', 'Probability', 'Database Management'],
+        skills: [
+            'Statistics', 'Probability', 'Calculus', 
+            'Linear Algebra', 'Optimization', 'Database Systems'
+        ],
     },
 ];
 
