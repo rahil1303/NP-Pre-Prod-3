@@ -3,6 +3,38 @@ import './ProjectsPage.css';
 
 const projects = [
     {
+    name: 'Bucket Oblivious Protocols (BOP)',
+    techStack: 'Python, gRPC, Cryptography',
+    description: 'Ongoing research at CWI implementing privacy-preserving data structures under strict client memory bounds (≤ 2Z). Includes Bucket Oblivious Sort (BOS), Oblivious Random Permutation (OSORT), and Oblivious Bloom Filter Insertion (OBFI). Developed multi-phase encrypted communication and verified theoretical guarantees through reproducible experiments.',
+    demo: 'https://github.com/rahil1303/bos-basic',
+    note: 'This repository is private as the project is still in progress. Feel free to reach out directly for access or details.'
+    },
+    {
+    name: 'Energy–Performance Trade-offs of Java GC Strategies',
+    techStack: 'Java, Python, EnergiBridge, Intel RAPL',
+    description: 'Empirical study conducted at VU Amsterdam analyzing the energy–performance trade-offs of Java Garbage Collection strategies (Serial, Parallel, G1) across 324 randomized RCBD runs. Automated data collection and analysis using ExperimentRunner, ANOVA, and Tukey HSD tests for statistical validation.',
+    demo: 'https://github.com/rahil1303/Green-Lab-Course-Work-Group-5'
+    },
+    {
+    name: 'PACSHAP–FeatureGraph (Privacy-Preserving Feature Selection)',
+    techStack: 'Python, SHAP, Autoencoders, Knowledge Graphs',
+    description: 'Developed a privacy-preserving feature selection framework integrating PAC-privacy guarantees with explainable AI via SHAP values and Knowledge Graph reasoning. Demonstrated improved interpretability and privacy–accuracy trade-offs compared to traditional feature selection methods.',
+    demo: 'https://github.com/rahil1303/PACSHAP-FeatureGraph'
+    },
+    {
+    name: 'Smartphone Activity Classification System',
+    techStack: 'Python, SciKit-Learn, LSTM, Sensor Fusion',
+    description: 'Built an activity recognition system using smartphone and smartwatch sensor data (accelerometer, gyroscope, heart rate) to classify physical activities. Engineered time–frequency domain features and compared ML models (Random Forest, SVM, KNN, LSTM) achieving R² = 0.71.',
+    demo: 'https://drive.google.com/file/d/16ysb-zkIarldtzvLlAyKsdYi9UgqWaQ4/view?usp=sharing'
+    },
+    {
+    name: 'Fact-Checking Pipeline using NLP and Knowledge Graphs',
+    techStack: 'Python, NLTK, Transformers, Wikidata API, DBpedia API',
+    description: 'Designed a hybrid AI-based fact verification pipeline combining deep learning-based textual entailment with multi-source entity validation using Wikidata and DBpedia. Incorporated explainable AI techniques to visualize evidence-based reasoning.',
+    demo: 'https://drive.google.com/file/d/1xaqfK_VsEtN5wWcU20s6ae-f67DFGxm7/view?usp=sharing'
+    },
+    
+    {
         name: 'Medicus The Smart Care Assistant for Healthcare',
         techStack: 'IBM Watson, Python, Django',
         description: 'Developed a predictive chatbot-enabled digital assistant for surgeons, patients, and care teams, automating tasks such as decision making, post-surgery planning, tracking, and estimating recovery time. This project won an award at the AGBI Hackathon organized by the Great Lakes Institute of Management and sponsored by NITI Aayog and Mehta’s Group of Hospitals.',
