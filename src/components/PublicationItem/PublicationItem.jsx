@@ -23,6 +23,7 @@ const PublicationItem = ({ publication }) => {
             </div>
             <div className="buttons">
                 <a href={publication.paperLink} target="_blank" rel="noopener noreferrer">Sneak Peek</a>
+                <button onClick={handleShowPopup}>Summary</button>
             </div>
             {showPopup && <SummaryPopup publication={publication} onClose={handleClosePopup} />}
         </div>
