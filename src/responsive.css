@@ -1,0 +1,342 @@
+/* ============================================
+   RESPONSIVE STYLES — All Screen Sizes
+   ============================================ */
+
+/* ---- LARGE DESKTOPS (1400px+) — already fine ---- */
+
+/* ---- SMALL LAPTOPS / LARGE TABLETS (1024px - 1399px) ---- */
+@media (max-width: 1399px) {
+  .navbar-left ul {
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .about-title {
+    font-size: 2em;
+  }
+
+  .about-content {
+    font-size: 0.85em;
+  }
+}
+
+/* ---- TABLETS (769px - 1023px) ---- */
+@media (max-width: 1023px) {
+  .navbar-left ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar-left ul li {
+    font-size: 12px;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .home-about-content {
+    flex-direction: column;
+  }
+
+  .home-about-images {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .home-about-description {
+    max-width: 100%;
+  }
+
+  .about-section {
+    flex-direction: column !important;
+    height: auto;
+    min-height: auto;
+  }
+
+  .about-content {
+    max-width: 100%;
+    order: 2 !important;
+  }
+
+  .slideshow,
+  .slideshow2,
+  .slideshow3 {
+    width: 100%;
+    height: auto;
+    order: 1 !important;
+    margin-bottom: 15px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-item {
+    flex: 1 1 calc(50% - 40px);
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- MOBILE (768px and below) ---- */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-left img {
+    margin-bottom: 10px;
+  }
+
+  .navbar-left ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .navbar-left ul li {
+    font-size: 11px;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  /* Home / Intro */
+  .intro-section {
+    height: auto;
+    min-height: 60vh;
+    padding: 40px 20px;
+  }
+
+  .intro-animation h1 {
+    font-size: 1.8em;
+  }
+
+  .intro-animation h2 {
+    font-size: 1.2em;
+  }
+
+  .home-about-section {
+    height: auto;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .home-about-content {
+    flex-direction: column;
+  }
+
+  .home-about-images {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .home-about-description {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .home-about-description li {
+    font-size: 14px;
+  }
+
+  /* About Page */
+  .about-section {
+    flex-direction: column !important;
+    height: auto;
+    min-height: auto;
+    padding: 20px 10px;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 10px;
+    order: 2 !important;
+  }
+
+  .about-title {
+    font-size: 1.5em;
+    white-space: normal;
+  }
+
+  .experience-list li {
+    font-size: 0.85em;
+    padding-left: 25px;
+  }
+
+  .slideshow,
+  .slideshow2,
+  .slideshow3 {
+    width: 100%;
+    height: auto;
+    order: 1 !important;
+    margin-bottom: 15px;
+  }
+
+  .scroll-button {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 15px auto;
+    display: block;
+  }
+
+  /* Projects */
+  .projects-page {
+    padding: 15px 10px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-name {
+    font-size: 1.2em;
+  }
+
+  /* Education */
+  .education-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-item {
+    max-width: 100%;
+    width: 100%;
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  /* Achievements */
+  .achievement-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievement-item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Certifications */
+  .certifications-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certification-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .certifications {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-item {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category {
+    margin: 10px 0;
+  }
+
+  /* Publications */
+  .publication-items {
+    flex-direction: column;
+  }
+
+  .publication-item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Resume / PDF */
+  .pdf-viewer-container {
+    height: 500px;
+    padding: 5px;
+  }
+
+  /* Slideshows */
+  .slideshow {
+    max-width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .prev, .next {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* ---- SMALL MOBILE (480px and below) ---- */
+@media (max-width: 480px) {
+  .navbar-left ul li {
+    font-size: 10px;
+  }
+
+  .navbar-left ul {
+    gap: 6px;
+  }
+
+  .intro-animation h1 {
+    font-size: 1.4em;
+  }
+
+  .intro-animation h2 {
+    font-size: 1em;
+  }
+
+  .about-title {
+    font-size: 1.2em;
+  }
+
+  .project-name {
+    font-size: 1.1em;
+  }
+
+  .project-description {
+    font-size: 0.85em;
+  }
+
+  .home-about-description li {
+    font-size: 13px;
+  }
+
+  .pdf-viewer-container {
+    height: 400px;
+  }
+}
