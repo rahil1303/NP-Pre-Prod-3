@@ -14,7 +14,7 @@ const educations = [
         degree: "Masters in Computer Science (Joint Degree Program)",
         years: "2024-2026",
         areas: "Big Data Engineering, Machine Learning, AI",
-        grade: "On-Going"
+        grade: "8.6"
     },
     {
         image: VU,
@@ -22,7 +22,7 @@ const educations = [
         degree: "Masters in Computer Science (Joint Degree Program)",
         years: "2024-2026",
         areas: "Big Data Engineering, Machine Learning, AI",
-        grade: "On-Going"
+        grade: "8.6"
     },
     {
         image: IIIT,
