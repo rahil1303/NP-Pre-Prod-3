@@ -42,7 +42,7 @@ const IntroAnimation = () => {
                 <h2 id="dynamic-text" className="fade-in-delay">R&D Enthusiast</h2>
             </div>
             <div className="typewriter">
-                <h1 id="description"></h1>
+                <h1 id="description" aria-label="Description"> </h1>
             </div>
         </div>
     );
