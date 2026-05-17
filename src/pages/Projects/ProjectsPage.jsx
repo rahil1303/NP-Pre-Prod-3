@@ -3,11 +3,22 @@ import './ProjectsPage.css';
 
 const projects = [
     {
-    name: 'Bucket Oblivious Protocols (BOP)',
-    techStack: 'Python, gRPC, Cryptography',
-    description: 'Ongoing research at CWI implementing privacy-preserving data structures under strict client memory bounds (≤ 2Z). Includes Bucket Oblivious Sort (BOS), Oblivious Random Permutation (OSORT), and Oblivious Bloom Filter Insertion (OBFI). Developed multi-phase encrypted communication and verified theoretical guarantees through reproducible experiments.',
-    demo: 'https://github.com/rahil1303/bos-basic',
-    note: 'This repository is private as the project is still in progress. Feel free to reach out directly for access or details.'
+    name: 'OBFI: Implementation, Empirical Analysis, and Crossover Characterization',
+    techStack: 'Python, gRPC, Cryptography, Encryption, Persistence',
+    description: 'Built a distributed client–server system in Python (gRPC, encryption, persistence) to implement and compare two cryptographic protocols for Oblivious Bloom Filter Insertion. Translated formal theoretical protocol specifications into executable systems, resolving ambiguities in prior research. Designed and ran experiments across varying batch sizes and filter capacities to evaluate real-world system behavior. Developed a decision framework for selecting between protocols based on deployment parameters and observed performance trends.',
+    demo: 'https://github.com/rahil1303/obfi-implementation-analysis.git'
+    },
+    {
+    name: 'Adaptive AI Interaction & Reasoning Platform',
+    techStack: 'Python, LLaMA, Qwen, GPT, Groq, RAG, Vector Search',
+    description: 'Built a full-stack RAG application supporting multi-model comparison across LLaMA, Qwen, GPT, and Groq-hosted models. Designed semantic chunking and vector retrieval pipelines with configurable similarity metrics and ranked context inspection. Developed multi-round critique and evaluation pipelines to analyze answer quality, reasoning consistency, and model behavior. Includes contextual highlighting, automated insight generation, side-by-side response comparison, and exportable evaluation logs.',
+    demo: 'https://github.com/rahil1303/adaptive-llm-reasoning-platform.git'
+    },
+    {
+    name: 'Reactivity–Reflectivity Vector Framework (RRVF)',
+    techStack: 'Python, NLP, YouTube API, Transformers',
+    description: 'Developed a framework to analyze political polarization beyond traditional left–right labels using measurable behavioral signals. Collected and processed large-scale YouTube transcript and comment data across major political events. Translated abstract concepts like framing, engagement, and reflectiveness into quantifiable features using NLP techniques, integrating theory-driven insights with practical analysis pipelines.',
+    demo: 'https://github.com/rahil1303/Social_Web_Project_Work.git'
     },
     {
     name: 'Energy–Performance Trade-offs of Java GC Strategies',
