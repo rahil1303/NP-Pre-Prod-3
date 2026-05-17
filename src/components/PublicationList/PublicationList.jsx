@@ -7,6 +7,7 @@ import publication2 from '../../assets/publication2.png';
 import publication3 from '../../assets/publication3.png';
 import publication4 from '../../assets/publication4.png';
 import publication5 from '../../assets/publication5.png';
+import publication6 from '../../assets/publication6.png';
 
 const publications = [
     {
@@ -54,9 +55,18 @@ const communityWorks = [
         description: "Conferences Experience",
         paperLink: "https://www.linkedin.com/in/rahil-sharma-ba5b6718b/",
         summaryLink: "https://www.linkedin.com/in/rahil-sharma-ba5b6718b/",
-        summary: "Represented College in the Communique International Telecom Seminar. The annual fest of Symbiosis Institute of Telecom Management. It explored whether the present ecosystem is resilient enough to sustain developments or the converging telecom tumultuous will topple the ICT domain. Imminent speakers from COAI, Oracle, Yes Bank, Accenture, etc. graced the event and shared their rich experiences during panel discussions and keynote sessions.",
-        
+        summary: "Represented College in the Communique International Telecom Seminar. The annual fest of Symbiosis Institute of Telecom Management. It explored whether the present ecosystem is resilient enough to sustain developments or the converging telecom tumultuous will topple the ICT domain. Imminent speakers from COAI, Oracle, Yes Bank, Accenture, etc. graced the event and shared their rich experiences during panel discussions and keynote sessions.",  
     },
+    {
+    image: publication6,
+    title: "OBFI: Implementation, Empirical Analysis, and Crossover Characterization of Competing Protocols",
+    description: "MSc Thesis conducted at CWI Amsterdam under Dr. Marten van Dijk",
+    paperLink: "https://drive.google.com/file/d/1WHsMdMMeypPuw9e6vLq37RMqvyMQ-gWU/view?usp=sharing",
+    summaryLink: "https://drive.google.com/file/d/1WHsMdMMeypPuw9e6vLq37RMqvyMQ-gWU/view?usp=sharing",
+    summary: "This thesis implements and empirically compares two cryptographic protocols for Oblivious Bloom Filter Insertion (OBFI) under strict client memory constraints. A distributed client–server system was built using Python and gRPC to translate formal theoretical specifications into executable systems. Experiments across varying batch sizes and filter capacities characterize real-world performance behavior, and a decision framework is developed for selecting between protocols based on deployment parameters and observed crossover points.",
+    publication: "CWI Amsterdam / VU-UvA MSc Thesis, 2026",
+    },
+    
 ];
 
 const PublicationList = () => {
