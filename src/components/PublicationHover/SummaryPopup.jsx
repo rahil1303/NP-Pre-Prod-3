@@ -13,8 +13,8 @@ const SummaryPopup = ({ publication, onClose }) => {
                 <img src={publication.image} alt={publication.title} className="summary-popup-image" />
                 <h2>{publication.title}</h2>
                 <p>{publication.summary}</p>
-                <p><strong>Publication:</strong> {publication.publication}</p>
-                <p><strong>Research Peers:</strong> {publication.researchPeers}</p>
+                {publication.publication && <p><strong>Publication:</strong> {publication.publication}</p>}
+                {publication.researchPeers && <p><strong>Research Peers:</strong> {publication.researchPeers}</p>}
                 <button onClick={onClose}>Close</button>
             </div>
         </div>

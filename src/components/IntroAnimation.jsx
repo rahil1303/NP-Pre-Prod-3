@@ -3,20 +3,10 @@ import './IntroAnimations.css';
 
 const IntroAnimation = () => {
     useEffect(() => {
-        const texts = ["Innovator", "Data Scientist", "Cloud Architect", "AI Specialist", "Tech Enthusiast", 
-        "Full Stack Developer", "Machine Learning Engineer", "Cybersecurity Analyst", 
-        "DevOps Engineer", "System Designer", "Tech Consultant", "API Developer", 
-        "Database Administrator", "Backend Developer", "Frontend Developer", 
-        "Digital Transformation Leader", "Tech Strategist", "Software Architect", 
-        "Quality Assurance Engineer", "Tech Mentor", "Open Source Contributor", 
-        "Mobile App Developer", "UX/UI Designer", "Blockchain Developer", 
-        "Data Analyst", "Tech Blogger", "Project Manager", "Cloud Engineer", 
-        "System Integrator", "IT Specialist", "Tech Evangelist", "Cloud Solutions Architect", 
-        "Data Warehouse Engineer", "Big Data Analyst", "IoT Developer", "Tech Visionary", 
-        "SaaS Developer", "AI Researcher", "Robotics Engineer", "Cloud Security Specialist", 
-        "Enterprise Architect", "Solution Architect", "Technical Lead", 
-        "Software Tester", "Innovation Manager", "Tech Entrepreneur", "Tech Consultant", 
-        "Web Developer", "Tech Innovator", "Data Engineer"];
+        const texts = ["Data Engineer", "Software Engineer", "AI Software Engineer",
+        "Cloud Engineer", "Integration Engineer", "Analytics Engineer",
+        "Backend Developer", "Systems Researcher", "Tech Consultant",
+        "Teaching Assistant", "Tech Blogger", "Problem Solver"];
        
         let currentTextIndex = 0;
         const dynamicTextElement = document.getElementById("dynamic-text");

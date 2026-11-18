@@ -1,5 +1,37 @@
+.resume-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.resume-tab {
+    background-color: #222;
+    color: #e5e5e5;
+    border: 1px solid #444;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.resume-tab:hover {
+    border-color: #e50914;
+}
+
+.resume-tab.active {
+    background-color: #e50914;
+    border-color: #e50914;
+    color: #fff;
+    font-weight: 600;
+}
+
 .pdf-viewer-container {
-    height: 750px;
+    padding-top: 90px;
+    box-sizing: border-box;
+    height: 900px;
     background-color: black;
     color: white;
     display: flex;
@@ -11,7 +43,8 @@
 
 .resume-container {
     width: 90%; /* Adjust width as needed */
-    height: calc(100% - 60px); /* Leave space for the button */
+    flex: 1;
+    min-height: 0; /* Fill the space left under the tabs */
     background-color: #000; /* Background color for the resume area */
     overflow: hidden; /* Ensure the PDF is contained */
     margin-bottom: 20px; /* Space between resume and download button */
