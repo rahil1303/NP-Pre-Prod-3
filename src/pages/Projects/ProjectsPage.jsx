@@ -16,6 +16,21 @@ const sections = [
         subtitle: 'Production-minded work across data engineering, backend systems and trustworthy AI.',
         projects: [
             {
+                name: 'Pipeline Incident Copilot',
+                meta: '2026 · Personal project',
+                badge: 'New · LLM agent with eval harness',
+                tech: ['Python', 'dbt', 'DuckDB', 'LLMs', 'Groq', 'Gemini', 'Ollama', 'GitHub Actions', 'pytest'],
+                description: 'An LLM copilot that diagnoses failed dbt pipeline runs. When dbt build fails, it reads the run artifacts, profiles the source data and checks recent code changes, then returns a structured diagnosis: the root-cause category, the node and column at fault, an explanation that cites the evidence, and a concrete fix. Built from what I saw handling 500+ production incidents: the answer is usually spread across logs, data and the git diff.',
+                highlights: [
+                    '20 labelled, reproducible incidents created by injecting faults into data (unit changes, nulls, renamed columns) and code (typos, removed filters, wrong transformations).',
+                    '80 to 90% of diagnoses fully correct (category, node and column) with gpt-oss-120b on Groq, against 50% for a rule-based baseline, at about 1.2 s per incident.',
+                    'CI regenerates evidence from real dbt builds and fails the check if LLM accuracy regresses; runs entirely on free tiers with a provider fallback chain.'
+                ],
+                links: [
+                    { label: 'GitHub', url: 'https://github.com/rahil1303/pipeline-incident-copilot' }
+                ]
+            },
+            {
                 name: 'Auditable Financial Fraud Detection',
                 meta: '2026 · University of Amsterdam',
                 badge: 'Paper accepted · Pre-ICIS SIGDSA 2026',

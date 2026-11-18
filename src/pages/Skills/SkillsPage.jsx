@@ -1,84 +1,100 @@
 // src/pages/Skills/SkillsPage.jsx
 import React from 'react';
-import { 
-    FaCode, 
-    FaDatabase, 
-    FaCloud, 
-    FaToolbox, 
-    FaProjectDiagram, 
-    FaTasks, 
-    FaBook, 
-    FaLock 
+import {
+    FaCode,
+    FaStream,
+    FaDatabase,
+    FaCloud,
+    FaRobot,
+    FaProjectDiagram,
+    FaShieldAlt,
+    FaLock,
+    FaHandshake
 } from 'react-icons/fa';
 import SkillCategory from '../../components/SkillCategory/SkillCategory';
 import './SkillsPage.css';
 
 const skills = [
     {
-        category: 'Programming & Scripting',
+        category: 'Programming & Backend',
         icon: <FaCode />,
         skills: [
-            'Python', 'Java', 'JavaScript', 'Node.js', 'SQL', 
-            'MATLAB', 'R', 'Bash / Shell Scripting'
+            'Python', 'SQL', 'Java', 'TypeScript', 'JavaScript', 'Bash',
+            'FastAPI', 'REST APIs', 'gRPC', 'React', 'OOP & Design Patterns'
         ],
     },
     {
-        category: 'Data Science & Analytics',
+        category: 'Data Engineering & Integration',
+        icon: <FaStream />,
+        skills: [
+            'ETL / ELT', 'Change Data Capture (CDC)', 'Batch & Stream Processing',
+            'Apache Kafka', 'Apache Spark / PySpark', 'Apache Airflow', 'dbt',
+            'Data Pipelines', 'API & Platform Integration'
+        ],
+    },
+    {
+        category: 'Data Platforms & Databases',
         icon: <FaDatabase />,
         skills: [
-            'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'BeautifulSoup',
-            'Scikit-Learn', 'XGBoost', 'LightGBM', 'Plotly'
+            'Snowflake', 'Databricks', 'Delta Lake', 'PostgreSQL', 'SQL Server',
+            'Oracle', 'Db2', 'DuckDB', 'Data Warehousing', 'Dimensional Modelling',
+            'Query & Performance Tuning'
         ],
     },
     {
-        category: 'Machine Learning & AI',
-        icon: <FaProjectDiagram />,
-        skills: [
-            'TensorFlow', 'PyTorch', 'Keras', 'Transformers (Hugging Face)',
-            'LSTM / CNN', 'Explainable AI (XAI)', 'NLTK', 'OpenCV'
-        ],
-    },
-    {
-        category: 'Cloud & Big Data Technologies',
+        category: 'Cloud & Infrastructure',
         icon: <FaCloud />,
         skills: [
-            'Snowflake', 'Databricks', 'Google Cloud Platform (GCP)', 
-            'Microsoft Azure', 'AWS', 'Confluent Kafka', 
-            'Docker', 'GitHub Actions'
+            'AWS (EC2, S3, RDS, VPC, IAM, Lambda, CloudWatch)',
+            'Azure (Data Factory, Synapse, Key Vault)', 'Google Cloud Platform',
+            'Terraform', 'Ansible', 'Docker', 'Kubernetes', 'Linux',
+            'Cloud Migration', 'High Availability & Scalability'
         ],
     },
     {
-        category: 'Frameworks & APIs',
-        icon: <FaToolbox />,
+        category: 'LLMs & Agentic AI',
+        icon: <FaRobot />,
         skills: [
-            'Django', 'Flask', 'Streamlit', 'Material UI', 'Bootstrap', 
-            'Avro Schema Registry', 'Docker Compose'
+            'RAG', 'Vector & Hybrid Search', 'Reranking', 'AI Agents', 'Tool Calling',
+            'MCP', 'LangChain', 'LangGraph', 'Multi-Model Orchestration',
+            'LLM Evaluation & Eval Harnesses', 'Groq / Gemini / Ollama'
         ],
     },
     {
-        category: 'Security & Research Tools',
+        category: 'Machine Learning & Data Science',
+        icon: <FaProjectDiagram />,
+        skills: [
+            'scikit-learn', 'XGBoost', 'LightGBM', 'PyTorch', 'TensorFlow',
+            'Transformers (Hugging Face)', 'Feature Engineering', 'Anomaly Detection',
+            'SHAP & Explainable AI', 'Pandas', 'NumPy', 'Statistical Analysis'
+        ],
+    },
+    {
+        category: 'Reliability, Data Quality & DevOps',
+        icon: <FaShieldAlt />,
+        skills: [
+            'Incident Management', 'Root-Cause Analysis', 'Monitoring & Observability',
+            'Data Quality Testing', 'Schema Validation', 'Data Lineage',
+            'CI/CD', 'GitHub Actions', 'Azure DevOps', 'Git',
+            'Automated & Integration Testing'
+        ],
+    },
+    {
+        category: 'Security, Privacy & Performance',
         icon: <FaLock />,
         skills: [
-            'gRPC / Protocol Buffers', 'Cryptographic Protocols', 
-            'Oblivious Sort / Bloom Filter Design', 
-            'Experimental Design (RCBD)', 'Energy Profiling'
+            'Privacy-Preserving Systems', 'Cryptographic Protocols',
+            'GDPR & Data Minimisation', 'Cloud Security', 'Performance Benchmarking',
+            'JVM & Garbage Collection Tuning', 'Energy Profiling', 'Experimental Design'
         ],
     },
     {
-        category: 'Professional & Teaching Skills',
-        icon: <FaTasks />,
+        category: 'Consulting & Collaboration',
+        icon: <FaHandshake />,
         skills: [
-            'Teaching Assistance', 'Research Communication', 
-            'Version Control (Git, GitHub, GitLab)', 
-            'Agile Workflow', 'Technical Writing', 'Organization Management'
-        ],
-    },
-    {
-        category: 'Theoretical & Mathematical Foundations',
-        icon: <FaBook />,
-        skills: [
-            'Statistics', 'Probability', 'Calculus', 
-            'Linear Algebra', 'Optimization', 'Database Systems'
+            'Requirements Gathering', 'Customer Onboarding', 'Stakeholder Communication',
+            'Architecture Reviews', 'Financial Reconciliation', 'Technical Writing',
+            'Teaching & Mentoring', 'Agile Workflow'
         ],
     },
 ];
