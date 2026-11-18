@@ -10,6 +10,7 @@ import CertificationsPage from './pages/Certifications/CertificationsPage';
 import ProjectsPage from './pages/Projects/ProjectsPage';
 import SkillsCategory from './pages/Skills/SkillsPage';
 import AboutPage from './pages/About/AboutPage';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/about" component={AboutPage} />
 
             </Switch>
+            <Footer />
         </Router>
     );
 }

@@ -84,3 +84,13 @@
     font-size: 1.5rem;
     transform: translateY(-20%); /* Adjust the vertical alignment of the arrows */
 }
+
+.scroll-down a {
+    color: #a3a3a3;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.scroll-down a:hover {
+    color: #fff;
+}
