@@ -113,3 +113,64 @@
 .alternate .slideshow2 {
     order: 1;
 }
+
+/* ---------- Tablet and phone layout ---------- */
+@media (max-width: 900px) {
+    .about-page .about-section,
+    .about-page .about-section.alternate {
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: auto;
+        padding: 24px 18px 32px;
+        gap: 20px;
+    }
+
+    /* Clear the fixed navbar, which wraps onto several lines on phones */
+    .about-page .about-section:first-child {
+        padding-top: 180px;
+    }
+
+    .about-page .about-content,
+    .about-page .alternate .about-content {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    .about-page .about-title {
+        white-space: normal;
+        font-size: 1.8em;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    .about-page .experience-list,
+    .about-page .experience-list li {
+        text-align: left;
+    }
+
+    .about-page .experience-list li {
+        padding-left: 26px;
+        margin-bottom: 16px;
+    }
+
+    .about-page .experience-list li::before {
+        font-size: 1.1rem;
+        transform: translateY(5%);
+    }
+
+    .about-page .slideshow,
+    .about-page .slideshow2,
+    .about-page .slideshow3,
+    .about-page .alternate .slideshow2 {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Native scrolling works fine on phones; the floating buttons only cover text */
+    .about-page .scroll-button {
+        display: none;
+    }
+}
