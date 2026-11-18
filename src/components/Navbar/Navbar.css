@@ -89,7 +89,7 @@
 .navbar-profile .dropdown {
     display: none;
     position: absolute;
-    top: 35px;
+    top: 28px;
     right: 0;
     background-color: #141414;
     color: white;
@@ -100,4 +100,57 @@
 
 .navbar-profile:hover .dropdown {
     display: block;
+}
+
+/* Text logo in Netflix red, replaces the Netflix wordmark */
+.navbar-logo {
+    color: #e50914;
+    font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-right: 25px;
+    line-height: 1;
+}
+
+.navbar-logo:hover {
+    color: #ff1f2c;
+}
+
+.open-to-work {
+    color: #46d369;
+    font-weight: 600;
+}
+
+/* Hover bridge so the menu doesn't close in the gap below the avatar */
+.navbar-profile::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 160px;
+    height: 14px;
+}
+
+.navbar-profile .dropdown {
+    min-width: 150px;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #333;
+}
+
+.navbar-profile:hover .dropdown {
+    display: flex;
+}
+
+.navbar-profile .dropdown a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.navbar-profile .dropdown a:hover {
+    color: #e50914;
 }
