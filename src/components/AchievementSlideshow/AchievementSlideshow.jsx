@@ -13,8 +13,14 @@ import verzeoOutstandingPerformer from '../../assets/verzeoOutstandingPerformer.
 import agbiHealthTech from '../../assets/agbiHealthTech.png';
 import communiqueSeminar from '../../assets/communiqueSeminar.png';
 import frenchOlympiad from '../../assets/frenchOlympiad.png';
+import rsSigdsa from '../../assets/rs_sigdsa.jpg';
+import rsBestTA from '../../assets/rs_bestta.jpg';
+import rsMsc from '../../assets/rs_msc.jpg';
 
 const images = [
+    rsSigdsa,
+    rsBestTA,
+    rsMsc,
     agbiPoster,
     preciselyStellarPerformer,
     preciselyLifeforceAward,
@@ -54,7 +60,7 @@ const AchievementSlideshow = () => {
                 <img
                     src={images[currentIndex]}
                     alt="Achievement"
-                    className={`slide-image ${currentIndex === 0 ? 'zoom-out' : ''}`} // Assuming agbiHealthTech is at index 7
+                    className={`slide-image ${images[currentIndex] === agbiPoster ? 'zoom-out' : ''}`} // Assuming agbiHealthTech is at index 7
                 />
             </div>
             <button className="next" onClick={handleNext}>&#10095;</button>

@@ -15,11 +15,66 @@ import communiqueSeminar from '../../assets/communiqueSeminar.png';
 import frenchOlympiad from '../../assets/frenchOlympiad.png';
 import Recom1 from '../../assets/Recom1.png';
 import Recom2 from '../../assets/Recom2.png';
+import rsSigdsa from '../../assets/rs_sigdsa.jpg';
+import rsBestTA from '../../assets/rs_bestta.jpg';
+import rsMsc from '../../assets/rs_msc.jpg';
+import rsIcsa from '../../assets/rs_icsa.jpg';
+import rsAmcis from '../../assets/rs_amcis.jpg';
 
 
 
 
 const achievements = [
+    {
+        image: rsSigdsa,
+        title: "Paper Accepted at the Pre-ICIS SIGDSA Symposium 2026",
+        date: "Nov 2026",
+        description: "My single-author paper \"Toward Auditable Fraud Detection: Combining Graph Features, Model Explanations, and Agentic Case Investigation\" was accepted at the Pre-ICIS SIGDSA Symposium 2026. I present it in Lisbon on December 12 to 13, 2026.",
+        details: [
+            "Fraud detection pipeline evaluated on 6.3M+ transactions, combining XGBoost, graph and anomaly features with exact SHAP explanations.",
+            "Argues that auditability and correctness must be validated independently, with explicit boundaries for when AI can decide and when a human must review.",
+            "Full manuscript published in the symposium proceedings; preprint on arXiv (2607.19266)."
+        ]
+    },
+    {
+        image: rsBestTA,
+        title: "Best Teaching Assistant Nomination",
+        date: "2026",
+        description: "Nominated for Best Teaching Assistant by the Faculty of Science at Vrije Universiteit Amsterdam.",
+        details: [
+            "Senior TA across Text Mining for AI, Learning Machines (Robotics) and Project Collective Intelligence, plus Fairness in Data Science at the University of Twente.",
+            "Led labs, mentored students and supervised a cohort of six bachelor students in their thesis module."
+        ]
+    },
+    {
+        image: rsMsc,
+        title: "MSc Computer Science (Big Data Engineering)",
+        date: "2026",
+        description: "Completed the joint MSc in Computer Science at VU Amsterdam and the University of Amsterdam with a GPA of 8.2/10, specialising in Big Data Engineering.",
+        details: [
+            "Thesis at CWI Amsterdam on Oblivious Bloom Filter Insertion (OBFI), the first empirical implementation and comparison of OBFI against WS12.",
+            "Released the pyobfi package on PyPI and made the thesis publicly available on Zenodo.",
+            "Student Ambassador for the University of Amsterdam."
+        ]
+    },
+    {
+        image: rsIcsa,
+        title: "Organising Committee, IEEE ICSA 2026",
+        date: "2026",
+        description: "Member of the organising committee of the IEEE International Conference on Software Architecture (ICSA 2026), hosted at Vrije Universiteit Amsterdam.",
+        details: [
+            "Helped run a leading international software architecture conference, working with researchers and industry practitioners."
+        ]
+    },
+    {
+        image: rsAmcis,
+        title: "Reviewer, AMCIS 2025",
+        date: "2025",
+        description: "Served as a peer reviewer for the Americas Conference on Information Systems (AMCIS 2025).",
+        details: [
+            "Reviewed submissions on data-driven and AI-enabled information systems."
+        ]
+    },
     {
         image: preciselyStellarPerformer,
         title: "Precisely Stellar Performer Award",
@@ -118,7 +173,7 @@ const achievements = [
     {
         image: preciselySpotAward2,
         title: "Spot Award July 2022",
-        date: "Jan 2023",
+        date: "Jul 2022",
         description: "As a driven and accomplished Software Support Engineer, I was recognized with a First Spot Award for consistently delivering exceptional performance.",
         details: [
             "Seamlessly collaborating with cross-functional teams (Engineering R&D, Professional Services) to address critical production issues.",

@@ -7,7 +7,7 @@ import './Publications.css';
 const Publications = () => {
     return (
         <div className="publications-page">
-            <h1>Publications</h1>
+            <h1>Research & Community Work</h1>
             <PublicationSlideshow />
             <PublicationList />
         </div>

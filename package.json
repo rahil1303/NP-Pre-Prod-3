@@ -2,6 +2,9 @@
   "name": "netflix-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@react-pdf-viewer/core": "^2.11.0",
     "@react-pdf-viewer/default-layout": "^2.11.0",
